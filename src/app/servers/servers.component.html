@@ -1,3 +1,9 @@
-<p>
-  servers works!
-</p>
+<button class="btn btn-primary"
+[disabled]="!allowNewServer"
+(click)="onCreateServer()">Add Server</button>
+<!-- <p>{{ allowNewServer }}</p> -->
+<p>{{ serverCreationStatus }}</p>
+<h1>This code is in servers.component.html</h1>
+<hr>
+<app-server></app-server>
+<app-server></app-server>
