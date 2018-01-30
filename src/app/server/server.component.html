@@ -1,4 +1,5 @@
 <div class="container">
   <h1>This code is in server.component.html</h1>
-  <h1 [ngStyle]="{backgroundColor: getColor()}">{{'Server'}} with ID {{ serverId }} is {{ getServerStatus() }}</h1>
+  <h1 [ngStyle]="{backgroundColor: getColor()}"
+  [ngClass]="{online: serverStatus === 'online' }">{{'Server'}} with ID {{ serverId }} is {{ getServerStatus() }}</h1>
 </div>
